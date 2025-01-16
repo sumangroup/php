@@ -13,5 +13,6 @@ $age=32;
 echo '$name,$age';
 ?>
 
+
 </body>
 </html>

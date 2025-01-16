@@ -19,9 +19,9 @@
         "age"=>100,
         "salary"=>15000
     ];
-    var_dump($array1);
+    print_r($array1);
     echo "<br>";
-    var_dump($array2);
+    print_r($array2);
 
     echo "<br>";
     echo "<br>";
@@ -33,7 +33,7 @@
         FALSE=>"e",
         
     );
-    var_dump($array3);
+    print_r($array3);
 
     echo "<br>";
     echo "<br>";
@@ -44,7 +44,7 @@
         100=>100,
         -100=>-100
     ];
-    var_dump($array4);
+    print_r($array4);
 
     echo "<br>";
     echo "<br>";
@@ -54,7 +54,7 @@
         100,
         -100
     ];
-    var_dump($array5);
+    print_r($array5);
 
     echo "<br>";
     echo "<br>";
@@ -65,7 +65,7 @@
         -100,
         "56"
     ];
-    var_dump($array6);
+    print_r($array6);
 
     echo "<br>";
     echo "<br>";
@@ -76,7 +76,7 @@
         -100,
         "56"
     ];
-    var_dump($array7);
+    print_r($array7);
 
     echo "<br>";
     echo "<br>";
@@ -95,7 +95,15 @@
         2 => 'l', // the value "k" will be overwritten by "l"
     );
 
-var_dump($array8);
+    print_r($array8);
+
+$array9=[
+    1,2,3
+];
+echo "<br>";
+echo "<br>";
+print_r($array9);
+
 ?>
 </body>
 </html>
