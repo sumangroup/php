@@ -17,7 +17,7 @@
         $result2=explode(" ",$text2,-2);
         print_r($result2);
 
-        
+       
 
     ?>
 </body>

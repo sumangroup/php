@@ -13,13 +13,24 @@
         $c=30;
         $e=40;
         $f=0;
-        $h=true;
-        $i=false;
+        // expected output should be false(0) but it's showing the true(1)
+        echo "and operator<br>";
+        $res1= $a<$b and $b>$e;
+        echo "$res1<br>";
 
-        $res= $a<$b || $b<$e;
-        echo "$res";
+        echo "or operator<br>";
+        // expected output should be true(1) but it's showing the false(0)
+        $res2=$a>$b or $b<$e;
+        echo "$res2<br>";
 
+        echo "xor operator<br>";
+        // expected output should be false(0) but it's showing the true(1)
+        $res3=$a<$b xor $b<$e;
+        echo "$res3<br>";
 
+        // expected output should be true(1) but it's showing the false(0)
+        $res4=$a>$b xor $b<$e;
+        echo "$res4<br>";
 
     ?>
 </body>
