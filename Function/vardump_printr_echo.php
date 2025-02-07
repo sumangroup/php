@@ -20,7 +20,7 @@
         );
         var_dump($var);
         echo "<br><br>";
-
+        
         echo "print_r()<br>";
         $var=array(
             "name"=>"Raju Ramchandra Mane",
@@ -30,11 +30,12 @@
         );
         print_r($var);
         echo "<br><br>";
-
+        /*
         echo "echo()<br>";
         $var="hello php class";
         echo($var);
         echo "<br><br>";
+        */
     ?>
 
 </body>
