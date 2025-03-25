@@ -1,11 +1,11 @@
 <?php
 class Student {
-    public $name;
+   
     public $course;
     public $studentId;
 
-    public function __construct($name, $course, $studentId) {
-        $this->name = $name;
+    public function __construct( $course, $studentId) {
+      
         $this->course = $course;
         $this->studentId = $studentId;
     }
@@ -17,12 +17,15 @@ class Student {
     }
 
     public function display() {
-        echo "Name: $this->name, Course: $this->course, Student ID: $this->studentId <br>";
+       echo<<<END
+        The course is $this->course <br>
+        and studentId is $this->studentId <br><br>
+       END;
     }
 }
 
 // Original student object
-$student1 = new Student("Alice", "Computer Science", "STU_101");
+$student1 = new Student( "Computer Science",uniqid("STU_") );
 
 // Clone the student (generates a new student ID)
 $student2 = clone $student1;

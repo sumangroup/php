@@ -31,6 +31,7 @@
         $std2= clone $std1;
 
         $std2->name="Anshika";
+        $std2->age=19;
         $std2->display();
     ?>
 </body>
